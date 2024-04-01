@@ -4,7 +4,7 @@ local RS = game:GetService("RunService")
 local TS = game:GetService("TweenService")
 local CG = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 
-local SelfModules = {UI = require(script.Parent:FindFirstChild("UI.lua"))}
+local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVilisz/Platinum/main/UI.lua"))()}
 local Storage = { Connections = {}, Tween = { Cosmetic = {} } }
 
 Arraylist.ScreenGui = {}

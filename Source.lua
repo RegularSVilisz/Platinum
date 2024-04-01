@@ -35,7 +35,7 @@ local CG = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
-local SelfModules = {UI = require(script.Parent:WaitForChild("UI.lua"))}
+local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVilisz/Platinum/main/UI.lua"))()}
 local Storage = { Connections = {}, Tween = { Cosmetic = {} } }
 
 local ListenForInput = false

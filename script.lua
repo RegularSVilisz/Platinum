@@ -1,5 +1,5 @@
 local Entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVilisz/Platinum/main/Entity.lua"))()
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/UI-Libraries/main/Vynixius/Source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVilisz/Platinum/main/Source.lua"))()
 
 repeat wait() until game:IsLoaded()
 

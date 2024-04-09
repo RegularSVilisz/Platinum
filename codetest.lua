@@ -129,7 +129,8 @@ function Verification:Start(options, KeySystem)
 
 					SelfModules.UI.Create("ImageLabel", {
 						Name = "ImageLabel",
-						BackgroundTransparency = 1,
+						BackgroundTransparency = 0,
+						BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 						Position = UDim2.new(0, 3, 0, 3),
 						Size = UDim2.new(1, -6, 1, -6),
 						Image = options.Picture or "",
@@ -143,7 +144,7 @@ function Verification:Start(options, KeySystem)
 				}),
 
 				SelfModules.UI.Create("Frame", {
-					Visible = options ~= nil and options.Invite ~= nil and typeof(options.Invite) == "string" and true or false,
+					Visible = false,
 					Name = "Discord",
 					BackgroundColor3 = Color3.fromRGB(35, 35, 35),
 					Position = UDim2.new(0, 32,0, 235),
@@ -254,7 +255,7 @@ function Verification:Start(options, KeySystem)
 		local Tinfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
 		local Tinfo2 = TweenInfo.new(0.3, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 
-		if options and options.Invite ~= nil and typeof(options.Invite) == "string" then
+		if options and options.Invite ~= nil then
 			VerifiyMenu.Frame.Handler.Discord.Visible = true
 			Storage.Connections.MouseEnter2 = VerifiyMenu.Frame.Handler.Discord.Button.TextButton.MouseEnter:Connect(function()
 				T:Create(VerifiyMenu.Frame.Handler.Discord.Button.TextButton, Tinfo2, { BackgroundColor3 = Color3.fromRGB(68, 81, 222) }):Play()

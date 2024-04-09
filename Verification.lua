@@ -132,7 +132,7 @@ function Verification:Start(options, KeySystem)
 						BackgroundTransparency = 1,
 						Position = UDim2.new(0, 3, 0, 3),
 						Size = UDim2.new(1, -6, 1, -6),
-						Image = "http://www.roblox.com/asset/?id=14211860571",
+						Image = options.Picture or "",
 						BorderSizePixel = 0,
 
 						SelfModules.UI.Create("UICorner", {

@@ -1,7 +1,5 @@
 local Entity = {}
 
-local networkownerswitch=tick()local isnetworkowner=function(part)local suc,res=pcall(function()return gethiddenproperty(part,"NetworkOwnershipRule")end);if(suc)and(res)==(Enum.NetworkOwnership.Manual)then sethiddenproperty(part,"NetworkOwnershipRule",Enum.NetworkOwnership.Automatic)networkownerswitch=tick()+8;end;return(networkownerswitch<=tick());end
-
 Entity.LocalPlayer = nil
 Entity.Character = nil
 Entity.Humanoid = nil

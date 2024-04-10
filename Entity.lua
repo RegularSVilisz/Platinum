@@ -5,7 +5,7 @@ local networkownerswitch=tick()local isnetworkowner=function(part)local suc,res=
 Entity.LocalPlayer = nil
 Entity.Character = nil
 Entity.Humanoid = nil
-Entity.HumanoidRootPart = nil
+Entity.HumanoidRootPart = {Pair = nil, Actual = nil}
 Entity.Mouse = nil
 Entity.IsAlive = nil
 Entity.Backpack = nil
